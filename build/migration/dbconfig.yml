@@ -1,6 +1,6 @@
 staging:
   dialect: postgres
-  datasource: host=172.18.0.2 port=5432 user=root password=secret dbname=simple_bank
+  datasource: host=127.0.0.1 port=5432 user=root password=secret dbname=simple_bank
   dir: migrations
   table: migrations
 
