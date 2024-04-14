@@ -6,6 +6,6 @@ staging:
 
 production:
   dialect: postgres
-  datasource: host=${POSTGRESQL_HOST} port=${POSTGRESQL_PORT} user=${POSTGRESQL_USER} password=${POSTGRESQL_PASSWORD} dbname=${POSTGRESQL_DB}
+  datasource: host=${POSTGRESQL_HOST} port=${POSTGRESQL_PORT} user=${POSTGRESQL_USER} password=${POSTGRESQL_PASSWORD} dbname=${POSTGRESQL_DB} sslmode=disable
   dir: migrations
   table: migrations

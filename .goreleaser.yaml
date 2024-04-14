@@ -103,7 +103,7 @@ dockers:
     #
     # Default: 'Dockerfile'
     # Templates: allowed
-    dockerfile: release/Dockerfile
+    dockerfile: old_build/Dockerfile
 
     # Use this instead of `dockerfile` if the contents of your Dockerfile are
     # supposed to go through the template engine as well.

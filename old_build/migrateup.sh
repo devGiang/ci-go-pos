@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
 echo "Postgres is up - begin migrating"
 # Run migration up
-migrate -path ./migration -database "postgresql://root:secret@172.19.0.2/simple_bank?sslmode=disable" -verbose up
+#docker exec -it postgres createdb --username=root --owner=root simple_bank
+
+migrate -path ./migration -database "postgresql://$POSTGRESQL_USER:$POSTGRESQL_PASSWORD@$POSTGRESQL_HOST:$POSTGRESQL_PORT/$POSTGRESQL_DB?sslmode=disable" -verbose up
