@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: g1ang/migrate-g1ang/migrate-golang
+  repository: g1ang/migrate-golang
   tag: 0.0.1
   pullPolicy: IfNotPresent
 
