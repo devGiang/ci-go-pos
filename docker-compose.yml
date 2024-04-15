@@ -16,9 +16,9 @@ services:
       - bank-network
 
   migrate:
-    # build:
-    #   dockerfile: old_build/Dockerfile
-    image: migrate-home:latest
+    build:
+      dockerfile: old_build/Dockerfile
+    # image: migrate-home:latest
     networks:
       - bank-network
     depends_on:

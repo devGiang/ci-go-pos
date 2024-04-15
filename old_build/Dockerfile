@@ -11,11 +11,17 @@ RUN apt-get update
 RUN apt-get install migrate
 RUN chmod +x ./migrateup.sh
 
-ENV POSTGRESQL_HOST="host.docker.internal"
+# ENV POSTGRESQL_HOST="host.docker.internal"
+# ENV POSTGRESQL_PORT=5432
+# ENV POSTGRESQL_USER="root"
+# ENV POSTGRESQL_PASSWORD="secret"
+# ENV POSTGRESQL_DB="simple_bank"
+
+ENV POSTGRESQL_HOST="postgres-giang-postgresql.postgresql.svc.cluster.local"
 ENV POSTGRESQL_PORT=5432
-ENV POSTGRESQL_USER="root"
-ENV POSTGRESQL_PASSWORD="secret"
-ENV POSTGRESQL_DB="simple_bank"
+ENV POSTGRESQL_USER="postgres"
+ENV POSTGRESQL_PASSWORD="dz1hXCSgxg"
+ENV POSTGRESQL_DB="postgres"
 
 # CMD [ "ls" ]
 
